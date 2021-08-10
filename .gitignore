@@ -1,0 +1,20 @@
+client/node_modules/
+client/.expo/
+client/npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+client/web-build/
+
+# macOS
+client/.DS_Store
+
+# server
+server/node_modules
+server/secrets.js
+server/.DS_Store
+server/npm-debug.log
+server/yarn-error.log

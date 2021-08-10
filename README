@@ -1,0 +1,12 @@
+Run Client
+Install Expo / React Native
+expo start
+
+Run Backend
+createdb moneybook
+// when you are in the server folder
+yarn
+yarn run start-server
+
+// if you want to seed data for testing
+yarn run seed
