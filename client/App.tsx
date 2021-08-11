@@ -2,15 +2,13 @@ import React from 'react';
 import 'react-native-gesture-handler';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { NativeBaseProvider, Heading } from 'native-base';
+import { NativeBaseProvider } from 'native-base';
+import { NavigationContainer } from '@react-navigation/native';
 
 import { theme } from './constants/themes';
 import useCustomFont from './hooks/useCustomFont';
 
-import {
-  ViewWithBackGround,
-  ViewWithTopHeader,
-} from './components/ReusableView';
+import BottomTabNavigator from './navigation/BottomTabNavigator';
 
 export default function App() {
   const isFontLoadingComplete = useCustomFont();
@@ -20,11 +18,11 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
-        <NativeBaseProvider theme={theme}>
-          <ViewWithTopHeader>
-            <Heading size="xl">Hello World</Heading>
-          </ViewWithTopHeader>
-        </NativeBaseProvider>
+        <NavigationContainer>
+          <NativeBaseProvider theme={theme}>
+            <BottomTabNavigator />
+          </NativeBaseProvider>
+        </NavigationContainer>
       </SafeAreaProvider>
     );
   }

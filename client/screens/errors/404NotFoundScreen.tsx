@@ -1,11 +1,8 @@
-import { StackScreenProps } from '@react-navigation/stack';
 import * as React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 
+import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParamList } from '../../types';
-
-const styles = StyleSheet.create({
-});
 
 export default function NotFound404Screen({
   navigation,
@@ -19,4 +16,3 @@ export default function NotFound404Screen({
     </View>
   );
 }
-
