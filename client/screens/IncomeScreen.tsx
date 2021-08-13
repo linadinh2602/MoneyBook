@@ -1,9 +1,16 @@
 import React from 'react';
 
-import { FrameWithTopAndBottomBackground } from '../components';
+import { View } from 'native-base';
+import {
+  FrameWithTopHeaderBackground,
+  LargeOverlayContainer,
+} from '../components';
 
 export const IncomeScreen = () => {
   return (
-    <FrameWithTopAndBottomBackground header="Income"></FrameWithTopAndBottomBackground>
+    <View bg="primary.50" maxWidth="100%" maxHeight="100%">
+      <FrameWithTopHeaderBackground header="Income" />
+      <LargeOverlayContainer />
+    </View>
   );
 };

@@ -1,3 +1,3 @@
-export * from '../navigation/DrawerNavigationView';
-export * from './BackgroundView';
+export * from './containerviews/BackgroundView';
+export * from './containerviews/OverlayContainer';
 export * from './IncomeOverlay';
