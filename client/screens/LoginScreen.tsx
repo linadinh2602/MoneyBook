@@ -1,7 +1,11 @@
 import React from 'react';
 
-import { FullBackgroundFrame } from '../components';
+import { FullBackgroundFrame, LargeOverlayContainer } from '../components';
 
 export const LoginScreen = () => {
-  return <FullBackgroundFrame></FullBackgroundFrame>;
+  return (
+    <FullBackgroundFrame>
+      <LargeOverlayContainer />
+    </FullBackgroundFrame>
+  );
 };
