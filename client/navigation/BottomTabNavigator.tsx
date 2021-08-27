@@ -29,14 +29,14 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="SpendingScreen"
+        name="Spending"
         component={SpendingScreen}
         options={{
           tabBarIcon: ({ color }) => <MenuIcon name="menu-icon" />,
         }}
       />
       <BottomTab.Screen
-        name="IncomeScreen"
+        name="Income"
         component={IncomeScreen}
         options={{
           tabBarIcon: ({ color }) => <MenuIcon name="menu-icon" />,

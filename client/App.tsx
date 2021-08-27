@@ -9,6 +9,7 @@ import { theme } from './constants/themes';
 import useCustomFont from './hooks/useCustomFont';
 
 import BottomTabNavigator from './navigation/BottomTabNavigator';
+import { DrawerNavigator } from './navigation/DrawerNavigator';
 
 export default function App() {
   const isFontLoadingComplete = useCustomFont();
@@ -20,7 +21,8 @@ export default function App() {
       <SafeAreaProvider>
         <NavigationContainer>
           <NativeBaseProvider theme={theme}>
-            <BottomTabNavigator />
+            <DrawerNavigator />
+            {/* <BottomTabNavigator /> */}
           </NativeBaseProvider>
         </NavigationContainer>
       </SafeAreaProvider>
